@@ -64,9 +64,6 @@ p {
 }
 
 /* Шапка */
-/*=============================================
-=            Section comment block            =
-=============================================*/
 
 .page-header {
   border-bottom: 1px solid var(--accent-color);
@@ -163,9 +160,6 @@ p {
 
 /* Секція герой */
 
-/*=============================================
-=            Section comment block            =
-=============================================*/
 .hero {
   max-width: 1440px;
   padding-top: 188px;
@@ -223,11 +217,6 @@ p {
   background-color: var(--pressed-state-color);
 }
 
-/*=====  End of Section comment block  ======*/
-
-/*=============================================
-=            Section comment block            =
-=============================================*/
 /* Секція 1 */
 .section-title,
 .section-team-title,
@@ -303,11 +292,6 @@ p {
 .services-text {
   color: var(--body-text-color);
 }
-/*=====  End of Section comment block  ======*/
-
-/*=============================================
-=            Section comment block            =
-=============================================*/
 
 /* Секція 2 */
 .section-doing {
@@ -318,11 +302,6 @@ p {
   display: flex;
   gap: 24px;
 }
-/*=====  End of Section comment block  ======*/
-
-/*=============================================
-=            Section comment block            =
-=============================================*/
 
 /* Секція 3 */
 .section-team {
@@ -376,12 +355,6 @@ p {
   background-color: var(--pressed-state-color);
 }
 
-/*=====  End of Section comment block  ======*/
-
-/*=============================================
-=            Section comment block            =
-=============================================*/
-
 /* Секція 4 */
 .customers-list-link {
   display: flex;
@@ -408,10 +381,7 @@ p {
   justify-content: center;
   gap: 24px;
 }
-/*=====  End of Section comment block  ======*/
-/*=============================================
-=           Footer           =
-=============================================*/
+/* Футер */
 
 .footer {
   padding-top: 100px;
@@ -423,7 +393,6 @@ p {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 .social-list-item {
   width: 40px;
@@ -444,12 +413,19 @@ p {
 .footer-text {
   width: 264px;
 }
+.footer-one-part {
+  margin-right: 120px;
+}
+.footer-two-part {
+  margin-right: 80px;
+}
 .footer-social-list {
   display: flex;
   justify-content: center;
   gap: 16px;
 }
-.footer-social-title {
+.footer-social-title,
+.footer-form-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -460,6 +436,65 @@ p {
   margin-bottom: 16px;
 }
 
+/* Subscribe footer */
+
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-dark-color);
+  color: var(--background-white-color);
+}
+.footer-form-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+
+  letter-spacing: 0.04em;
+
+  color: var(--background-white-color);
+}
+.footer-form-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  background-color: var(--primary-brand-color);
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 16px;
+  padding: 8px 24px;
+  border: none;
+  transition: background-color var(--transition-duration-and-func);
+}
+.footer-form-submit:hover,
+.footer-form-submit:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.footer-button-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  color: var(--background-white-color);
+}
+.icon-footer-form {
+  width: 24px;
+  height: 24px;
+}
+.footer-form-sub-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
 /*=====  End footer  ======*/
 
 /* Портфоліо */
@@ -584,12 +619,13 @@ p {
   height: 576px;
   top: 50%;
   left: 50%;
+  padding: 24px 24px 24px;
+  padding-top: 72px;
   transform: translate(-50%, -50%) scale(1);
   background-color: var(--backround-color-modal);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: var(--transition-duration-and-func);
 }
 .modal-close {
   position: absolute;
@@ -604,6 +640,8 @@ p {
   background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
+  transition: background-color var(--transition-duration-and-func),
+    color var(--transition-duration-and-func);
 }
 .modal-close:hover,
 .modal-close:focus {
@@ -617,4 +655,123 @@ p {
 }
 .icon-close-modal {
   transition: fill var(--transition-duration-and-func);
+}
+
+.modal-contacs-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 16px;
+
+  letter-spacing: 0.02em;
+  color: var(--background-dark-color);
+}
+.modal-form-input-desc {
+  display: block;
+  font-size: 12px;
+
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text);
+  margin-bottom: 4px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-contacs {
+  margin-bottom: 8px;
+}
+.contact-form-input {
+  width: 100%;
+  height: 40px;
+
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  transition: border-color var(--transition-duration-and-func);
+}
+.contact-form-input:focus {
+  outline: none;
+  border-color: var(--primary-brand-color);
+}
+.contact-form-input:focus + .modal-form-input-icon {
+  fill: var(--primary-brand-color);
+}
+
+.modal-form-input-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate(0, -50%);
+
+  width: 18px;
+  height: 24px;
+  transition: fill var(--transition-duration-and-func);
+}
+.modal-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+.modal-form-comment {
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+  transition: var(--transition-duration-and-func);
+}
+.modal-form-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+.modal-form-comment:focus {
+  outline: none;
+  border-color: var(--primary-brand-color);
+}
+.modal-form-fake-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.modal-form-check:checked + .modal-form-fake-check {
+  background-color: var(--primary-brand-color);
+  color: var(--background-section-color);
+}
+.modal-form-check:focus + .modal-form-fake-check {
+  outline: 1px solid var(--primary-brand-color);
+}
+.modal-form-check-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text);
+}
+.modal-form-check-link {
+  color: var(--primary-brand-color);
+}
+.modal-form-check-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.modal-form-submit {
+  width: 169px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  align-self: center;
+  transition: background-color var(--transition-duration-and-func);
+}
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  background-color: var(--pressed-state-color);
 }
