@@ -460,7 +460,6 @@ p {
 }
 .footer-form-submit {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 165px;
   height: 40px;
@@ -489,9 +488,8 @@ p {
   width: 24px;
   height: 24px;
 }
-.footer-form-sub-wrapper {
+.footer-form {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 24px;
 }
@@ -616,7 +614,7 @@ p {
 .modal {
   position: absolute;
   width: 408px;
-  height: 576px;
+  height: 584px;
   top: 50%;
   left: 50%;
   padding: 24px 24px 24px;
@@ -683,6 +681,9 @@ p {
 .modal-form-contacs {
   margin-bottom: 8px;
 }
+.modal-form-contacs-textarea {
+  margin-bottom: 16px;
+}
 .contact-form-input {
   width: 100%;
   height: 40px;
@@ -716,6 +717,7 @@ p {
   display: block;
 }
 .modal-form-comment {
+  display: block;
   width: 100%;
   height: 120px;
   padding: 8px 16px;
