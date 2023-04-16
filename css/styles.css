@@ -707,7 +707,7 @@ p {
   top: 50%;
   left: 16px;
   transform: translate(0, -50%);
-
+  fill: var(--title-text-color);
   width: 18px;
   height: 24px;
   transition: fill var(--transition-duration-and-func);
